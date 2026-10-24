@@ -21,9 +21,9 @@ class Devbin < Formula
   # becomes https://github.com/matthewsinclair/devbin.git, and the formula then
   # installs for anyone.
   url "ssh://git@github.com/matthewsinclair/devbin.git",
-      tag:      "v0.1.13",
-      revision: "6fa7b3c06a0ce5cfedad4833871cd05036bd94dc"
-  license :cannot_represent
+      tag:      "v0.1.14",
+      revision: "593109bfb12430fe53ddd34e71037bda2639cf66"
+  license "MIT"
 
   # devbin refuses macOS's own bash, 3.2, and runs on bash 5 or later. Linux
   # ships one. What a single verb needs beyond that, `bin/devbin doctor` reports
@@ -50,9 +50,12 @@ class Devbin < Formula
       and the project's bin/devbin upgrade finds it again at
         #{opt_libexec}
       through HOMEBREW_PREFIX, which `brew shellenv` exports, unless
-      DEVBIN_INSTALL_PREFIX or the machine pointer ($XDG_DATA_HOME/devbin/home,
-      by default ~/.local/share/devbin/home) names another install.
+      DEVBIN_INSTALL_PREFIX or the link ~/.local/bin/devbin names another tree.
       bin/devbin doctor, run in a project, says which install it reads and why.
+
+      A maintainer with a dev checkout or an opt install of devbin chooses
+      between them and this install with devbin use (devbin use brew returns
+      to this one).
 
       devbin's own install and upgrade refuse to write into this install.
       Update it with:
