@@ -21,8 +21,8 @@ class Devbin < Formula
   # becomes https://github.com/matthewsinclair/devbin.git, and the formula then
   # installs for anyone.
   url "ssh://git@github.com/matthewsinclair/devbin.git",
-      tag:      "v0.1.14",
-      revision: "593109bfb12430fe53ddd34e71037bda2639cf66"
+      tag:      "v0.1.15",
+      revision: "4efb6e173e70de75da3cd76d541f29e3b57d04a4"
   license "MIT"
 
   # devbin refuses macOS's own bash, 3.2, and runs on bash 5 or later. Linux
