@@ -2,8 +2,8 @@
 # below and the commit it names: edit the template, not this file, which the
 # next render replaces.
 #   template  packaging/homebrew/devbin.rb
-#   tag       v0.1.18
-#   commit    a9b8cd7c11a9e1e0a25ae56b45b9504eee51971e
+#   tag       v0.1.19
+#   commit    0b5e4fa0f5406317a5d22a6d211c2649cc4135b1
 class Devbin < Formula
   desc "Dev launcher framework that projects vendor as bin/devbin"
   homepage "https://github.com/matthewsinclair/devbin"
@@ -13,8 +13,8 @@ class Devbin < Formula
   # repository's, and render reads the revision there, the snapshot's commit,
   # which a development checkout does not hold.
   url "https://github.com/matthewsinclair/devbin.git",
-      tag:      "v0.1.18",
-      revision: "a9b8cd7c11a9e1e0a25ae56b45b9504eee51971e"
+      tag:      "v0.1.19",
+      revision: "0b5e4fa0f5406317a5d22a6d211c2649cc4135b1"
   license "MIT"
 
   # devbin refuses macOS's own bash, 3.2, and runs on bash 5 or later, so on
