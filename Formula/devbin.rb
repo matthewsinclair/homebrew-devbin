@@ -2,19 +2,18 @@
 # below and the commit it names: edit the template, not this file, which the
 # next render replaces.
 #   template  packaging/homebrew/devbin.rb
-#   tag       v0.1.19
-#   commit    0b5e4fa0f5406317a5d22a6d211c2649cc4135b1
+#   tag       v0.1.20
+#   commit    be40dea790f2214ebf982b2e102d943a8853186a
 class Devbin < Formula
   desc "Dev launcher framework that projects vendor as bin/devbin"
   homepage "https://github.com/matthewsinclair/devbin"
-  # HTTPS, THE PUBLIC REPOSITORY. devbin publishes each release as a snapshot
-  # of the product in a public repository, so brew fetches it with no
-  # credential, and the formula installs for anyone. The tag below is that
-  # repository's, and render reads the revision there, the snapshot's commit,
-  # which a development checkout does not hold.
+  # HTTPS, THE PUBLIC REPOSITORY. devbin is developed in a public repository,
+  # so brew fetches it with no credential, and the formula installs for anyone.
+  # The tag below names the release commit there, and render reads the revision
+  # from that tag in the checkout that cut it.
   url "https://github.com/matthewsinclair/devbin.git",
-      tag:      "v0.1.19",
-      revision: "0b5e4fa0f5406317a5d22a6d211c2649cc4135b1"
+      tag:      "v0.1.20",
+      revision: "be40dea790f2214ebf982b2e102d943a8853186a"
   license "MIT"
 
   # devbin refuses macOS's own bash, 3.2, and runs on bash 5 or later, so on
