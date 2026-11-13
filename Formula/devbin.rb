@@ -2,8 +2,8 @@
 # below and the commit it names: edit the template, not this file, which the
 # next render replaces.
 #   template  packaging/homebrew/devbin.rb
-#   tag       v0.1.23
-#   commit    7ab2198211c4eea3c2d9e14ce4e497031e9dd43b
+#   tag       v0.1.24
+#   commit    0ac94d4d7c93f7cad70e196a242239f11b52d2e8
 class Devbin < Formula
   desc "Dev launcher framework that projects vendor as bin/devbin"
   homepage "https://github.com/matthewsinclair/devbin"
@@ -12,8 +12,8 @@ class Devbin < Formula
   # The tag below names the release commit there, and render reads the revision
   # from that tag in the checkout that cut it.
   url "https://github.com/matthewsinclair/devbin.git",
-      tag:      "v0.1.23",
-      revision: "7ab2198211c4eea3c2d9e14ce4e497031e9dd43b"
+      tag:      "v0.1.24",
+      revision: "0ac94d4d7c93f7cad70e196a242239f11b52d2e8"
   license "MIT"
 
   # devbin refuses macOS's own bash, 3.2, and runs on bash 5 or later, so on
